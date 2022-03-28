@@ -5,7 +5,7 @@ import logo from "@/assets/images/logo.webp";
 
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
+    <div class="container">
       <RouterLink class="navbar-brand" to="/">
         <img :src="logo" alt="logo" />
       </RouterLink>
