@@ -25,4 +25,10 @@ body {
   font-family: "Quicksand", sans-serif;
   padding-top: var(--margin-top-body);
 }
+
+@media (min-width: 992px) {
+  .table {
+    max-width: 500px;
+  }
+}
 </style>
