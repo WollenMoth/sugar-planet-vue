@@ -1,15 +1,13 @@
 <script setup>
+import ThemedTable from "@/components/ThemedTable.vue";
 import { useFlavourStore } from "@/stores/FlavourStore";
-import { useThemeStore } from "@/stores/ThemeStore";
 const flavourStore = useFlavourStore();
-const themeStore = useThemeStore();
 flavourStore.fill();
-themeStore.fill();
 </script>
 
 <template>
   <h2>Sabores</h2>
-  <table :class="`table table-${themeStore.theme} table-striped table-hover`">
+  <ThemedTable>
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -24,5 +22,5 @@ themeStore.fill();
         <td>$ {{ flavour.price }} MXN</td>
       </tr>
     </tbody>
-  </table>
+  </ThemedTable>
 </template>

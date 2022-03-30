@@ -1,15 +1,13 @@
 <script setup>
+import ThemedTable from "@/components/ThemedTable.vue";
 import { useDecorationStore } from "@/stores/DecorationStore";
-import { useThemeStore } from "@/stores/ThemeStore";
 const decorationStore = useDecorationStore();
-const themeStore = useThemeStore();
 decorationStore.fill();
-themeStore.fill();
 </script>
 
 <template>
   <h2>Adornos</h2>
-  <table :class="`table table-${themeStore.theme} table-striped table-hover`">
+  <ThemedTable>
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -27,5 +25,5 @@ themeStore.fill();
         <td>$ {{ decoration.price }} MXN</td>
       </tr>
     </tbody>
-  </table>
+  </ThemedTable>
 </template>
