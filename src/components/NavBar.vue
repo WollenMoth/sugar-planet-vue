@@ -23,6 +23,7 @@ import logo from "@/assets/images/logo.webp";
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <RouterLink class="nav-link" to="/">Home</RouterLink>
+          <RouterLink class="nav-link" to="/info">Información</RouterLink>
           <RouterLink class="nav-link" to="/dashboard">Dashboard</RouterLink>
         </ul>
       </div>
