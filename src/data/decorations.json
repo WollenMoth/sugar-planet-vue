@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "Figuras de Fondant", "price": 5, "stock": 25 },
+  { "id": 2, "name": "Chispas de Chocolate", "price": 10, "stock": 20 },
+  { "id": 3, "name": "Betún", "price": 15, "stock": 15 }
+]
