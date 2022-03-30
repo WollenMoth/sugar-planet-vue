@@ -1,12 +1,15 @@
 <script setup>
 import { useDecorationStore } from "@/stores/DecorationStore";
+import { useThemeStore } from "@/stores/ThemeStore";
 const decorationStore = useDecorationStore();
+const themeStore = useThemeStore();
 decorationStore.fill();
+themeStore.fill();
 </script>
 
 <template>
   <h2>Adornos</h2>
-  <table class="table table-dark table-striped table-hover">
+  <table :class="`table table-${themeStore.theme} table-striped table-hover`">
     <thead>
       <tr>
         <th scope="col">#</th>

@@ -1,13 +1,17 @@
 <script setup>
 import { RouterLink } from "vue-router";
-import logo from "@/assets/images/logo.webp";
+import { useThemeStore } from "@/stores/ThemeStore";
+const themeStore = useThemeStore();
+themeStore.fill();
 </script>
 
 <template>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <nav
+    :class="`navbar fixed-top navbar-expand-lg navbar-${themeStore.theme} bg-${themeStore.theme}`"
+  >
     <div class="container">
       <RouterLink class="navbar-brand" to="/">
-        <img :src="logo" alt="logo" />
+        <img :src="themeStore.logo" alt="logo" />
       </RouterLink>
       <button
         class="navbar-toggler"
@@ -38,5 +42,9 @@ import logo from "@/assets/images/logo.webp";
 
 .navbar-dark .navbar-nav .nav-link.router-link-exact-active {
   color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link.router-link-exact-active {
+  color: rgba(0, 0, 0, 0.9);
 }
 </style>

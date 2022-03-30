@@ -26,6 +26,13 @@ body {
   padding-top: var(--margin-top-body);
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111;
+    color: #fff;
+  }
+}
+
 @media (min-width: 992px) {
   .table {
     max-width: 500px;

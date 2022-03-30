@@ -1,12 +1,15 @@
 <script setup>
 import { useFlavourStore } from "@/stores/FlavourStore";
+import { useThemeStore } from "@/stores/ThemeStore";
 const flavourStore = useFlavourStore();
+const themeStore = useThemeStore();
 flavourStore.fill();
+themeStore.fill();
 </script>
 
 <template>
   <h2>Sabores</h2>
-  <table class="table table-dark table-striped table-hover">
+  <table :class="`table table-${themeStore.theme} table-striped table-hover`">
     <thead>
       <tr>
         <th scope="col">#</th>
