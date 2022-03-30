@@ -5,6 +5,7 @@ import DecorationsInfo from "@/components/DecorationsInfo.vue";
 </script>
 
 <template>
+  <h1>Información</h1>
   <ShopInfo />
   <FlavoursInfo />
   <DecorationsInfo />
