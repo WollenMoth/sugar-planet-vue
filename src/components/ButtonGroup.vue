@@ -18,5 +18,7 @@ const theme = themeStore.theme === "dark" ? "light" : "dark";
   >
     Enviar
   </button>
-  <button type="reset" class="btn btn-outline-warning">Reiniciar</button>
+  <button type="reset" class="btn btn-outline-warning" @click="formStore.reset">
+    Reiniciar
+  </button>
 </template>

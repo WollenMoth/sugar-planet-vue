@@ -17,6 +17,7 @@ formStore.reset();
 
 const submit = () => {
   orderStore.addOrder(formStore.order);
+  formStore.reset();
   router.push("/");
 };
 </script>
