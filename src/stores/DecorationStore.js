@@ -7,4 +7,8 @@ export const useDecorationStore = defineStore("DecorationStore", {
       this.decorations = (await import("@/data/decorations.json")).default;
     },
   },
+  getters: {
+    inStock: (state) =>
+      state.decorations.filter((decoration) => decoration.stock > 0),
+  },
 });
