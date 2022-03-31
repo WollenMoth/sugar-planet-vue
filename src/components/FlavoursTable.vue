@@ -15,5 +15,17 @@ defineProps({
 
 <template>
   <h2>Sabores</h2>
-  <ThemedTable :columns="columns" :data="flavourStore.flavours" />
+  <ThemedTable
+    id="flavours-table"
+    :columns="columns"
+    :data="flavourStore.flavours"
+  />
 </template>
+
+<style>
+@media (min-width: 992px) {
+  #flavours-table {
+    max-width: 500px;
+  }
+}
+</style>

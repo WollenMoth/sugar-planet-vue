@@ -15,5 +15,17 @@ defineProps({
 
 <template>
   <h2>Adornos</h2>
-  <ThemedTable :columns="columns" :data="decorationStore.decorations" />
+  <ThemedTable
+    id="decorations-table"
+    :columns="columns"
+    :data="decorationStore.decorations"
+  />
 </template>
+
+<style>
+@media (min-width: 992px) {
+  #decorations-table {
+    max-width: 500px;
+  }
+}
+</style>
