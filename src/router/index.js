@@ -27,4 +27,10 @@ const router = createRouter({
   ],
 });
 
+router.beforeEach((_, from) => {
+  if (!from.name || window.innerWidth >= 992) return;
+  const toggler = document.getElementsByClassName("navbar-toggler")[0];
+  if (!toggler.className.includes("collapsed")) toggler.click();
+});
+
 export default router;
