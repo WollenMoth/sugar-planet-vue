@@ -3,7 +3,7 @@ import ThemedTable from "@/components/ThemedTable.vue";
 import { useOrderStore } from "@/stores/OrderStore";
 
 const orderStore = useOrderStore();
-orderStore.fill();
+if (!orderStore.isFilled) orderStore.fill();
 
 const columns = [
   { path: "cake.general_description", label: "Descripción General" },
