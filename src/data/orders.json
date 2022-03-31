@@ -1,0 +1,38 @@
+[
+  {
+    "cake": {
+      "general_description": "Pastel rectangular de dos pisos para 40 personas",
+      "flavours": ["Chocolate"],
+      "decorations": []
+    },
+    "person": {
+      "name": "Juan Pérez",
+      "phone": "5555551212",
+      "email": "juan.perez@domain.com"
+    }
+  },
+  {
+    "cake": {
+      "general_description": "Pastel redondo de 3 pisos para 100 personas",
+      "flavours": ["Vainilla", "Fresa"],
+      "decorations": ["Figuras de Fondant"]
+    },
+    "person": {
+      "name": "María Rodríguez",
+      "phone": "5555551212",
+      "email": "maria.rodriguez@domain.com"
+    }
+  },
+  {
+    "cake": {
+      "general_description": "Pastel redondo para 15 personas",
+      "flavours": ["Limón"],
+      "decorations": ["Chispas de Chocolate"]
+    },
+    "person": {
+      "name": "Luis García",
+      "phone": "5555551212",
+      "email": "luis.garcia@domain.com"
+    }
+  }
+]
