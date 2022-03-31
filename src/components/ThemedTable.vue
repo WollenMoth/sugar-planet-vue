@@ -19,8 +19,10 @@ defineProps({
 </script>
 
 <template>
-  <table :class="`table table-${themeStore.theme} table-striped table-hover`">
-    <ThemedTableHeader :columns="columns" />
-    <ThemedTableBody :columns="columns" :data="data" />
-  </table>
+  <div class="table-responsive-lg">
+    <table :class="`table table-${themeStore.theme} table-striped table-hover`">
+      <ThemedTableHeader :columns="columns" />
+      <ThemedTableBody :columns="columns" :data="data" />
+    </table>
+  </div>
 </template>
