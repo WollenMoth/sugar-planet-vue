@@ -14,6 +14,7 @@ const formStore = useFormStore();
       as="textarea"
       :rows="5"
       :id="controlId"
+      :maxlength="200"
       v-model="formStore.order.cake.general_description"
     />
   </FormGroup>
