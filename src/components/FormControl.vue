@@ -45,3 +45,11 @@ defineEmits(["update:modelValue"]);
     @input="$emit('update:modelValue', $event.target.value)"
   />
 </template>
+
+<style>
+@media (min-width: 992px) {
+  .form-control {
+    max-width: 250px;
+  }
+}
+</style>

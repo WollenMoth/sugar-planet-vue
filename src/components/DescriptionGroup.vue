@@ -12,9 +12,17 @@ const formStore = useFormStore();
     <FormLabel :forName="controlId">Descripción general</FormLabel>
     <FormControl
       as="textarea"
-      :rows="3"
+      :rows="5"
       :id="controlId"
       v-model="formStore.order.cake.general_description"
     />
   </FormGroup>
 </template>
+
+<style>
+@media (min-width: 992px) {
+  #description {
+    max-width: 400px;
+  }
+}
+</style>
