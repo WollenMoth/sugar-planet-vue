@@ -20,6 +20,10 @@ defineProps({
     type: Number,
     default: null,
   },
+  maxlength: {
+    type: Number,
+    default: null,
+  },
   modelValue: {
     type: [String, Array],
     required: true,
@@ -37,6 +41,7 @@ defineEmits(["update:modelValue"]);
     :placeholder="placeholder"
     :rows="rows"
     :value="modelValue"
+    :maxlength="maxlength"
     @input="$emit('update:modelValue', $event.target.value)"
   />
 </template>
