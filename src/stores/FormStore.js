@@ -18,8 +18,8 @@ export const useFormStore = defineStore("FormStore", {
     order: emptyOrder,
   }),
   actions: {
-    reset: (state) => {
-      state.order = emptyOrder;
+    reset() {
+      this.order = emptyOrder;
     },
   },
 });
