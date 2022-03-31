@@ -1,7 +1,7 @@
 <script setup>
 import FlavoursTable from "@/components/FlavoursTable.vue";
-import DecorationsTable from "../components/DecorationsTable.vue";
-import OrdersTable from "../components/OrdersTable.vue";
+import DecorationsTable from "@/components/DecorationsTable.vue";
+import OrdersTable from "@/components/OrdersTable.vue";
 
 const columns = [
   { path: "id", label: "#" },
