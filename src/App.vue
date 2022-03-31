@@ -33,9 +33,7 @@ body {
   }
 }
 
-@media (min-width: 992px) {
-  .table {
-    max-width: 500px;
-  }
+.table th {
+  white-space: nowrap;
 }
 </style>
