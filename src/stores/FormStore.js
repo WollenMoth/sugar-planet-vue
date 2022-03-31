@@ -22,4 +22,15 @@ export const useFormStore = defineStore("FormStore", {
       this.order = emptyOrder;
     },
   },
+  getters: {
+    isFilled: (state) => {
+      return (
+        state.order.cake.general_description &&
+        state.order.cake.flavours.length &&
+        state.order.person.name &&
+        state.order.person.phone &&
+        state.order.person.email
+      );
+    },
+  },
 });
