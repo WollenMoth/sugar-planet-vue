@@ -12,10 +12,6 @@ defineProps({
     type: String,
     required: true,
   },
-  className: {
-    type: String,
-    default: "form-control",
-  },
   placeholder: {
     type: String,
     default: null,
@@ -37,7 +33,7 @@ defineEmits(["update:modelValue"]);
     :is="as"
     :type="type"
     :id="id"
-    :class="className"
+    class="form-control"
     :placeholder="placeholder"
     :rows="rows"
     :value="modelValue"
